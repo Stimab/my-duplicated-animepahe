@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Shoga Oluwaseye" />
+    <title>animepahe</title>
+    <link rel="icon" href="" type="" />
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body class="bg-black">
+    <div class="pb-[6rem] xl:mx-[7.75rem]">
+      <header>
+        <nav class="py-[0.3rem] lg:flex items-center">
+          <div
+            class="flex items-center justify-between mt-[0.1rem] sm:mt-[0.18rem] md:mt-0 lg:mt-0"
+          >
+            <span class="ml-[0.85rem] md:ml-0">
+              <a href="./index.html" title="animepahe" class="lg:py-1.5">
+                <img
+                  src="./animepahe_logo.svg"
+                  alt="animepahe logo"
+                  class="w-full object-cover"
+                />
+              </a>
+            </span>
+
+            <span
+              class="lg:hidden mr-[1.0rem] sm:mr-[1.15rem] md:mr-0 hover:cursor-[pointer] md:border rounded-[0.2rem] border-[#1e1d1d] px-[0.60rem] py-[0.30rem]"
+              id="menu_icon"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.4"
+                stroke="currentColor"
+                class="h-[2.0.7rem] w-[2.05rem] stroke-[#858484]"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </span>
+          </div>
+
+          <div class="text-white lg:flex hidden" id="menu">
+            <div class="lg:flex lg:flex-row flex flex-col items-center mx-3">
+              <a href="./index.html" class="head-btn" title="home">home</a>
+              <a href="" class="head-btn" title="anime">anime</a>
+              <a href="" class="head-btn" title="queue">queue</a>
+            </div>
+
+            <form action="" class="form-search">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2.7"
+                stroke="gray"
+                class="size-4 mr-[0.58rem]"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                />
+              </svg>
+
+              <input
+                type="text"
+                placeholder="Search"
+                autocomplete="off"
+                class="text-black text-[0.9rem] pr-[0.45rem] bg-transparent border-none outline-none placeholder-[#6c757d] w-full"
+              />
+            </form>
+          </div>
+        </nav>
+      </header>
+
+      <!-- announcement -->
+      <div class="bg-[#d5015b] px-[1.76rem] py-[0.7rem]" id="announcement">
+        <div
+          class="text-white text-[0.84rem] xl:px-[4.3rem] py-[0.15rem] flex items-center"
+        >
+          <p>
+            Just a heads-up,
+            <a href="" class="font-bold"><u>animepahe.si</u></a>
+            is now the mian primary domain, our other domains are now
+            redirecting to
+            <a href="" class="font-bold"><u>animepahe.si</u></a
+            >.
+          </p>
+
+          <div
+            class="ml-[2rem] sm:ml-[4rem] lg:ml-[7rem] cursor-pointer"
+            id="cancel"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2.5"
+              stroke="currentColor"
+              class="size-4"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18 18 6M6 6l12 12"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!--Content  -->
+      <main>
+        <article class="pt-6 lg:pt-5 md:pb-8">
+          <div class="text-white text-[2rem] font-light">Latest Releases</div>
+
+          <section class="flex justify-center w-full">
+            <div
+              class="container grid sm:grid-cols-3 gap-2.5 lg:gap-3 w-full place-items-center cursor-pointer mx-3 sm:mx-0"
+            ></div>
+          </section>
+        </article>
+      </main>
+
+      <footer>
+        <nav>
+          <div class="text-white flex justify-center nav mt-5">
+            <span class="to-first bottom-nav rounded-l-[0.26rem]">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2.5"
+                stroke="currentColor"
+                class="size-2.5 stroke-[#d5015b]"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m18.75 4.5-7.5 7.5 7.5 7.5m-6-15L5.25 12l7.5 7.5"
+                />
+              </svg>
+            </span>
+
+            <span class="prev-btn bottom-nav">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2.5"
+                stroke="currentColor"
+                class="size-2.5 stroke-[#d5015b]"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5 8.25 12l7.5-7.5"
+                />
+              </svg>
+            </span>
+
+            <span
+              class="current-page h-[2.4rem] w-[2.2rem] flex items-center pl-[0.75rem] border-r-[0.05rem] border-black bg-[#d5015b]"
+            >
+            </span>
+
+            <span class="next-btn bottom-nav-background">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2.5"
+                stroke="currentColor"
+                class="size-2.5 stroke-[#d5015b]"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </span>
+
+            <span class="bottom-nav-background to-last rounded-r-[0.26rem]">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2.5"
+                stroke="currentColor"
+                class="size-2.5 stroke-[#d5015b]"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </span>
+          </div>
+        </nav>
+      </footer>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+  <!-- # Build your CSS (once)
+npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+
+# Now you can just open index.html
+ -->
+</html>

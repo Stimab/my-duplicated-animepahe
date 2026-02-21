@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+.head-btn {
+  @apply text-[0.9rem] pl-[4%] sm:pl-[1.5%] md:pl-[4%] pr-[85%] sm:pr-[89.5%] md:pr-[99%] lg:px-4 py-[0.48rem] hover:bg-[#d5015b] hover:transition ease-out  hover:duration-[1000ms] cursor-[pointer] font-[400];
+}
+
+.image {
+  @apply h-[16rem] sm:h-[6.80rem] md:h-[8.80rem] lg:h-[12.2rem] w-[100%] cursor-pointer hover:scale-110 transition-transform duration-400 ease-out;
+}
+
+.title {
+  @apply text-white font-semibold text-[0.9rem] absolute bottom-[0.75rem] left-[0.85rem] hover:cursor-[pointer] hover:underline z-10;
+}
+
+.episode {
+  @apply text-white font-semibold text-[1rem] absolute bottom-[0.75rem] right-[0.75rem];
+}
+
+.bottom-nav-background {
+  @apply h-[2.4rem] w-[2.2rem] bg-[#191919] flex items-center pl-[0.75rem] border-r-[0.05rem] border-black cursor-pointer;
+}
+
+.content {
+  @apply overflow-hidden w-full;
+}
+
+.bottom-nav {
+  @apply h-[2.4rem] w-[2.2rem] bg-[#0f0f0fc3] flex items-center pl-[0.75rem] border-r-[0.05rem] border-black;
+}
+
+@layer components {
+  .form-search {
+    @apply bg-[#dfe1e2] flex items-center lg:ml-[32.3rem] xl:ml-[31.7rem] px-[0.75rem] xl:px-[0.65rem] mt-[0.33rem] lg:mt-0 mx-[1rem] py-[0.42rem] md:ml-[70%] md:mr-0;
+  }
+}
+/* @utility
+@layer components
+@layer base */
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-in {
+  animation: fadeInUp 0.4s ease-out forwards;
+}
+
+@keyframes fadeOutDown {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+.animate-out {
+  animation: fadeOutDown 0.4s ease-out forwards;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes zoomOut {
+  0% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.zoom-out {
+  animation: zoomOut 0.4s ease-out forwards;
+}
+.zoom-in {
+  animation: zoomIn 0.4s ease-out forwards;
+}

@@ -49,6 +49,11 @@ const toLast = document.querySelector(".to-last");
 const prevBtn = document.querySelector(".prev-btn");
 const nextBtn = document.querySelector(".next-btn");
 const currentPage = document.querySelector(".current-page");
+// const formSearch = document.querySelector("#form-search");
+
+// formSearch.addEventListener("click", () => {
+//   formSearch.classList.add("border-red-100");
+// });
 
 // Create movie elements on DOMContentLoaded
 window.addEventListener("DOMContentLoaded", () => {

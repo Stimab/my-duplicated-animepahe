@@ -5,7 +5,7 @@
 }
 
 .image {
-  @apply h-[16rem] sm:h-[6.80rem] md:h-[8.80rem] lg:h-[12.2rem] w-[100%] cursor-pointer hover:scale-110 transition-transform duration-400 ease-out;
+  @apply h-[16rem] sm:h-[5.80rem] md:h-[8.80rem] lg:h-[12.2rem] w-[100%] cursor-pointer hover:scale-110 transition-transform duration-400 ease-out;
 }
 
 .title {

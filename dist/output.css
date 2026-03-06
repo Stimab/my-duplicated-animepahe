@@ -7,7 +7,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-50: oklch(97.1% 0.013 17.38);
     --color-red-100: oklch(93.6% 0.032 17.717);
     --color-black: #000;
     --color-white: #fff;
@@ -231,13 +230,6 @@
   .hidden {
     display: none;
   }
-  .table {
-    display: table;
-  }
-  .size-2 {
-    width: calc(var(--spacing) * 2);
-    height: calc(var(--spacing) * 2);
-  }
   .size-2\.5 {
     width: calc(var(--spacing) * 2.5);
     height: calc(var(--spacing) * 2.5);
@@ -268,17 +260,8 @@
   .w-full {
     width: 100%;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .transform {
-    transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
-  }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
   }
   .flex-col {
     flex-direction: column;
@@ -295,9 +278,6 @@
   .justify-center {
     justify-content: center;
   }
-  .gap-2 {
-    gap: calc(var(--spacing) * 2);
-  }
   .gap-2\.5 {
     gap: calc(var(--spacing) * 2.5);
   }
@@ -311,10 +291,6 @@
   .rounded-r-\[0\.26rem\] {
     border-top-right-radius: 0.26rem;
     border-bottom-right-radius: 0.26rem;
-  }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
   }
   .border-r-\[0\.05rem\] {
     border-right-style: var(--tw-border-style);
@@ -330,9 +306,6 @@
   .border-black {
     border-color: var(--color-black);
   }
-  .border-red-50 {
-    border-color: var(--color-red-50);
-  }
   .border-red-100 {
     border-color: var(--color-red-100);
   }
@@ -344,9 +317,6 @@
   }
   .bg-transparent {
     background-color: transparent;
-  }
-  .fill-white {
-    fill: var(--color-white);
   }
   .fill-white\/80 {
     fill: color-mix(in srgb, #fff 80%, transparent);
@@ -416,21 +386,10 @@
   .text-white {
     color: var(--color-white);
   }
-  .underline {
-    text-decoration-line: underline;
-  }
   .placeholder-\[\#6c757d\] {
     &::placeholder {
       color: #6c757d;
     }
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
-  .ease-out {
-    --tw-ease: var(--ease-out);
-    transition-timing-function: var(--ease-out);
   }
   .outline-none {
     --tw-outline-style: none;
@@ -609,7 +568,7 @@
     }
   }
   @media (width >= 40rem) {
-    height: 6.80rem;
+    height: 5.80rem;
   }
   @media (width >= 48rem) {
     height: 8.80rem;
@@ -751,26 +710,6 @@
 .zoom-in {
   animation: zoomIn 0.4s ease-out forwards;
 }
-@property --tw-rotate-x {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-rotate-y {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-rotate-z {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-skew-x {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-skew-y {
-  syntax: "*";
-  inherits: false;
-}
 @property --tw-border-style {
   syntax: "*";
   inherits: false;
@@ -779,11 +718,6 @@
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
-}
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
 }
 @property --tw-ease {
   syntax: "*";
@@ -811,14 +745,8 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
-      --tw-rotate-x: initial;
-      --tw-rotate-y: initial;
-      --tw-rotate-z: initial;
-      --tw-skew-x: initial;
-      --tw-skew-y: initial;
       --tw-border-style: solid;
       --tw-font-weight: initial;
-      --tw-outline-style: solid;
       --tw-ease: initial;
       --tw-duration: initial;
       --tw-scale-x: 1;

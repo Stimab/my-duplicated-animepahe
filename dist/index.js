@@ -1,7 +1,7 @@
 // Movie Array Data
 const movies = [
   { title: "Solo leveling", img: "solo-leveling-ep", episode: "15" },
-  { title: "Gachiakuta", img: "gachiakuta-ep", episode: "4" },
+  { title: "Gachiakuta", img: "Gachiakuta-ep", episode: "4" },
   { title: "Demon Slayer", img: "demon-slayer-ep", episode: "13" },
 
   { title: "Attack on Titan", img: "attack-on-titan-ep", episode: "22" },
